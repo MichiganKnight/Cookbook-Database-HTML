@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    font-size: 25px;
+    border: 10x solid darkgray;
+    background-color: transparent;
+    cursor: pointer;
+    color: blue;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btnBack {
+    text-align: center;
+}

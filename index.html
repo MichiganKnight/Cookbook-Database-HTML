@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cookbook Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <p class="dropbtn">Import Recipe
+                <i class="fa fa-caret-down"></i>
+            </p>
+            <div class="dropdown-content" id="myDropdown">
+                <form action="./success/saladSuccess.php" method="POST" id="saladForm" enctype="multipart/form-data">
+                    <label class="custom-file-upload">
+                        <input type="file" name="saladInput" id="saladInput" accept=".jpg" />
+                        Salads
+                    </label>
+                </form>
+                <form action="./success/soupSuccess.php" method="POST" id="soupForm" enctype="multipart/form-data">
+                    <label class="custom-file-upload">
+                        <input type="file" name="soupInput" id="soupInput" accept=".jpg" />
+                        Soups
+                    </label>
+                </form>
+                <form action="./success/appetizerSuccess.php" method="POST" id="appetizerForm"
+                    enctype="multipart/form-data">
+                    <label class="custom-file-upload">
+                        <input type="file" name="appetizerInput" id="appetizerInput" accept=".jpg" />
+                        Appetizers
+                    </label>
+                </form>
+                <div class="dropdown2">
+                    <button class="dropbtn2">Main Courses
+                        <i class="fa fa-caret-right"></i>
+                    </button>
+                    <div class="dropdown-content2" id="myDropdown2">
+                        <form action="./success/meatSuccess.php" method="POST" id="meatForm" enctype="multipart/form-data">
+                            <label class="custom-file-upload">
+                                <input type="file" name="meatInput" id="meatInput" accept=".jpg" />
+                                Meat
+                            </label>
+                        </form>
+                        <form action="./success/poultrySuccess.php" method="POST" id="poultryForm" enctype="multipart/form-data">
+                            <label class="custom-file-upload">
+                                <input type="file" name="poultryInput" id="poultryInput" accept=".jpg" />
+                                Poultry
+                            </label>
+                        </form>
+                        <form action="./success/seafoodSuccess.php" method="POST" id="seafoodForm" enctype="multipart/form-data">
+                            <label class="custom-file-upload">
+                                <input type="file" name="seafoodInput" id="seafoodInput" accept=".jpg" />
+                                Seafood
+                            </label>
+                        </form>
+                    </div>
+                    <form action="./success/vegetableSuccess.php" method="POST" id="vegetableForm" enctype="multipart/form-data">
+                        <label class="custom-file-upload">
+                            <input type="file" name="vegetableInput" id="vegetableInput" accept=".jpg" />
+                            Vegetables
+                        </label>
+                    </form>
+                    <form action="./success/sideSuccess.php" method="POST" id="sideForm" enctype="multipart/form-data">
+                        <label class="custom-file-upload">
+                            <input type="file" name="sideInput" id="sideInput" accept=".jpg" />
+                            Sides
+                        </label>
+                    </form>
+                    <form action="./success/dessertSuccess.php" method="POST" id="dessertForm" enctype="multipart/form-data">
+                        <label class="custom-file-upload">
+                            <input type="file" name="dessertInput" id="dessertInput" accept=".jpg" />
+                            Desserts
+                        </label>
+                    </form>
+                    <form action="success/breakfastSuccess.php" method="POST" id="breakfastForm" enctype="multipart/form-data">
+                        <label class="custom-file-upload">
+                            <input type="file" name="breakfastInput" id="breakfastInput" accept=".jpg" />
+                            Breakfast
+                        </label>
+                    </form>
+                    <form action="success/miscSuccess.php" method="POST" id="miscForm" enctype="multipart/form-data">
+                        <label class="custom-file-upload">
+                            <input type="file" name="miscInput" id="miscInput" accept=".jpg" />
+                            Misc.
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <form method="POST" action="recipes/search/search.php">
+                <input type="text" name="searchInput" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <h1>Cookbook Database</h1>
+    <div class="btn-group">
+        <button id="btnSalads">Salads</button>
+        <button id="btnSoups">Soups</button>
+        <button id="btnAppetizers">Appetizers</button>
+        <button id="btnMeatCourses">Meat</button>
+        <button id="btnPoultryCourses">Poultry</button>
+        <button id="btnSeafoodCourses">Seafood</button>
+        <button id="btnVegetables">Vegetables</button>
+        <button id="btnSides">Sides</button>
+        <button id="btnDesserts">Desserts</button>
+        <button id="btnBreakfast">Breakfast</button>
+        <button id="btnMisc">Misc.</button>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
